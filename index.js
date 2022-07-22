@@ -19,7 +19,7 @@ io.on("connection", socket => {
     console.log("Usuario conectado:", socket.id);
     
     // Si no existe su usuario, se agrega al objeto
-    coordenadas[socket.id] ??= [];
+    if(!coordenadas[socket.id]) coordenadas[socket.id] = [];
 
     socket.on("obtenerCoordenadas", () => {
         io.emit("obtenerCoordenadas", coordenadas);
