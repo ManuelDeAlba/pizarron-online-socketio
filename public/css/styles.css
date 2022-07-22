@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overscroll-behavior: contain;
+}
+.app{
+    background: #fff;
+}
+#canvas{
+    display: block;
+    border-top: 1px solid #000;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    padding: 10px 20px;
+}
